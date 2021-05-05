@@ -1,0 +1,22 @@
+{
+  "name": "mern-ecommerce-app",
+  "version": "1.0.0",
+  "description": "MERN ecommerce app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smkattoula/MERN-eCommerce-App.git"
+  },
+  "author": "Shaker Kattoula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smkattoula/MERN-eCommerce-App/issues"
+  },
+  "homepage": "https://github.com/smkattoula/MERN-eCommerce-App#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
