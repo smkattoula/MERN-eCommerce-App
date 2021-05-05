@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/smkattoula/MERN-eCommerce-App#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.7"
