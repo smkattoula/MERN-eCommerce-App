@@ -4,19 +4,25 @@ import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import connectDB from "./config/db.js";
 
 import productRoutes from "./routes/productRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 
 dotenv.config();
 
 // Connect to MongoDB
 connectDB();
 
+// App initialization
 const app = express();
+
+// Body Parser
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
 app.use("/api/products", productRoutes);
+app.use("/api/users", userRoutes);
 
 // Error Handler Middlware
 app.use(notFound);
